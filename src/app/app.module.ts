@@ -8,7 +8,6 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CartservicetsService } from './cartservicets.service';
 import { CartService } from './cart.service';
 
 @NgModule({
@@ -29,7 +28,7 @@ import { CartService } from './cart.service';
     ProductDetailsComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartservicetsService, CartService]
+  providers: [CartService]
 })
 export class AppModule { }
 
